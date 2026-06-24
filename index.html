@@ -20,15 +20,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .sync-badge.offline{background:#eee;color:#888;}
 .page{display:none;padding:12px 14px;}
 .page.active{display:block;}
+/* WEEK NAV */
 .week-nav{display:flex;align-items:center;gap:6px;margin-bottom:10px;}
 .week-nav button{width:36px;height:36px;border-radius:50%;border:0.5px solid rgba(0,0,0,0.15);background:#fff;font-size:18px;cursor:pointer;flex-shrink:0;}
-.week-picker{flex:1;text-align:center;font-size:13px;border:0.5px solid rgba(0,0,0,0.1);border-radius:8px;background:#fff;font-weight:500;cursor:pointer;color:#1a1a1a;outline:none;padding:6px 4px;}
+.week-picker{flex:1;font-size:13px;border:0.5px solid rgba(0,0,0,0.1);border-radius:8px;background:#fff;font-weight:500;cursor:pointer;color:#1a1a1a;outline:none;padding:6px 4px;}
 .week-actions{display:flex;gap:6px;margin-bottom:12px;}
 .week-actions button{font-size:11px;padding:6px 10px;border:0.5px solid rgba(0,0,0,0.15);border-radius:8px;background:#fff;cursor:pointer;flex:1;}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;}
-.stat-box{background:#fff;border-radius:10px;padding:10px 8px;text-align:center;border:0.5px solid rgba(0,0,0,0.07);}
-.stat-box .sv{font-size:17px;font-weight:600;}
-.stat-box .sl{font-size:10px;color:#888;margin-top:2px;}
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:12px;}
+.stat-box{background:#fff;border-radius:10px;padding:9px 6px;text-align:center;border:0.5px solid rgba(0,0,0,0.07);}
+.stat-box .sv{font-size:15px;font-weight:600;}
+.stat-box .sl{font-size:9px;color:#888;margin-top:2px;}
+/* RATIO */
 .ratio-card{background:#fff;border-radius:10px;border:0.5px solid rgba(0,0,0,0.07);padding:12px;margin-bottom:12px;}
 .ratio-card h3{font-size:11px;font-weight:500;color:#888;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px;}
 .bar-row{display:flex;align-items:center;gap:8px;margin-bottom:5px;}
@@ -38,29 +41,33 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .bar-val{font-size:11px;font-weight:500;width:30px;text-align:right;flex-shrink:0;}
 .ratio-pill{margin-top:10px;padding:8px 12px;border-radius:10px;font-size:13px;font-weight:500;}
 .ratio-hint{font-size:11px;color:#666;margin-top:5px;line-height:1.5;}
+/* ZONES */
 .zones-card{background:#fff;border-radius:10px;border:0.5px solid rgba(0,0,0,0.07);padding:12px;margin-bottom:12px;}
 .zones-card h3{font-size:11px;font-weight:500;color:#888;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px;}
 .zone-row{display:flex;align-items:center;gap:8px;margin-bottom:4px;}
 .zone-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
 .zone-name{font-size:11px;flex:1;}
 .zone-range{font-size:11px;color:#888;}
+/* JOURS */
 .days-list{display:flex;flex-direction:column;gap:8px;}
 .day-block{background:#fff;border-radius:12px;border:0.5px solid rgba(0,0,0,0.07);overflow:hidden;}
 .day-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;}
-.day-header .dname{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#888;width:32px;flex-shrink:0;}
-.day-header .dsummary{font-size:12px;color:#aaa;flex:1;padding:0 8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-.day-header .dadd{width:28px;height:28px;border-radius:50%;border:0.5px solid rgba(0,0,0,0.15);background:#f5f4f0;font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#555;flex-shrink:0;}
+.dname{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#888;width:32px;flex-shrink:0;}
+.dsummary{font-size:12px;color:#aaa;flex:1;padding:0 8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.dadd{width:28px;height:28px;border-radius:50%;border:0.5px solid rgba(0,0,0,0.15);background:#f5f4f0;font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#555;flex-shrink:0;}
 .day-sessions{padding:0 10px 10px;}
+/* SÉANCE CARD */
 .scard{border-radius:9px;padding:10px 12px;margin-bottom:6px;position:relative;}
 .scard .st{font-weight:500;font-size:13px;margin-bottom:6px;padding-right:28px;}
-.scard .fields{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
-.scard .field{display:flex;align-items:center;gap:5px;}
-.scard label{font-size:11px;opacity:.7;}
-.scard input[type=number]{width:56px;padding:4px 6px;font-size:12px;border:0.5px solid rgba(0,0,0,0.2);border-radius:6px;background:rgba(255,255,255,.6);color:inherit;outline:none;}
+.scard .fields{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+.scard .field{display:flex;align-items:center;gap:4px;}
+.scard label{font-size:11px;opacity:.7;white-space:nowrap;}
+.scard input[type=number]{width:52px;padding:4px 5px;font-size:12px;border:0.5px solid rgba(0,0,0,0.2);border-radius:6px;background:rgba(255,255,255,.6);color:inherit;outline:none;}
 .scard .zone-badge{font-size:9px;padding:2px 6px;border-radius:10px;background:rgba(0,0,0,0.08);font-weight:500;}
-.scard .eff{font-size:10px;margin-top:5px;opacity:.65;}
+.scard .eff{font-size:10px;margin-top:5px;opacity:.65;line-height:1.5;}
 .scard .del{position:absolute;top:8px;right:10px;width:22px;height:22px;border-radius:50%;border:none;background:rgba(0,0,0,0.08);color:inherit;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:.6;}
 .warn-day{background:#FAEEDA;color:#633806;border-radius:8px;padding:6px 10px;font-size:11px;margin:0 10px 8px;}
+/* MODAL */
 .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:200;display:none;align-items:flex-end;}
 .modal-bg.open{display:flex;}
 .modal{background:#fff;border-radius:18px 18px 0 0;padding:16px;width:100%;max-height:82vh;overflow-y:auto;}
@@ -73,13 +80,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .bloc-btn:active{opacity:.7;}
 .bloc-btn .bb{font-weight:500;font-size:12px;}
 .bloc-btn .bm{font-size:10px;opacity:.7;margin-top:2px;}
+/* GRAPHIQUE */
 .chart-card{background:#fff;border-radius:12px;border:0.5px solid rgba(0,0,0,0.07);padding:12px;margin-bottom:12px;overflow:hidden;}
 .chart-card h3{font-size:11px;font-weight:500;color:#888;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px;}
-.chart-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
-canvas{display:block;}
+.chart-controls{display:flex;gap:6px;margin-bottom:8px;align-items:center;}
+.chart-controls button{font-size:13px;padding:4px 10px;border:0.5px solid rgba(0,0,0,0.15);border-radius:6px;background:#fff;cursor:pointer;}
+.chart-controls span{font-size:11px;color:#888;flex:1;text-align:center;}
+.chart-wrap{position:relative;overflow:hidden;border-radius:6px;}
+canvas#chart{display:block;cursor:crosshair;}
+/* TOOLTIP GRAPHIQUE */
+.chart-tooltip{position:absolute;background:#1a1a1a;color:#fff;font-size:11px;padding:6px 10px;border-radius:8px;pointer-events:none;display:none;line-height:1.6;white-space:nowrap;z-index:10;}
 .chart-legend{display:flex;gap:10px;margin-top:8px;flex-wrap:wrap;}
 .chart-legend span{font-size:10px;color:#666;display:flex;align-items:center;gap:4px;}
 .ldot{width:10px;height:3px;border-radius:2px;display:inline-block;}
+/* SETTINGS */
 .settings-card{background:#fff;border-radius:12px;border:0.5px solid rgba(0,0,0,0.07);padding:14px;margin-bottom:10px;}
 .settings-card h3{font-size:13px;font-weight:500;margin-bottom:10px;}
 .settings-card p{font-size:12px;color:#666;line-height:1.6;margin-bottom:8px;}
@@ -95,12 +109,13 @@ canvas{display:block;}
 .btn-full.danger{color:#c0392b;}
 .btn-full.success{background:#1a1a1a;color:#fff;border-color:#1a1a1a;}
 .install-steps{background:#f5f4f0;border-radius:8px;padding:10px 12px;font-size:12px;color:#555;line-height:1.9;}
+/* BOTTOM NAV */
 .bottom-nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:0.5px solid rgba(0,0,0,0.1);display:flex;z-index:100;padding-bottom:env(safe-area-inset-bottom);}
 .bnav-item{flex:1;padding:10px 4px 8px;text-align:center;border:none;background:none;cursor:pointer;color:#888;font-size:10px;}
 .bnav-item.active{color:#1a1a1a;}
 .bnav-icon{font-size:20px;display:block;margin-bottom:2px;}
 .sep{height:1px;background:rgba(0,0,0,0.06);margin:8px 0;}
-.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#1a1a1a;color:#fff;padding:8px 16px;border-radius:20px;font-size:12px;z-index:300;opacity:0;transition:opacity .3s;pointer-events:none;}
+.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#1a1a1a;color:#fff;padding:8px 16px;border-radius:20px;font-size:12px;z-index:300;opacity:0;transition:opacity .3s;pointer-events:none;white-space:nowrap;}
 .toast.show{opacity:1;}
 </style>
 </head>
@@ -111,8 +126,9 @@ canvas{display:block;}
   <span class="sync-badge offline" id="sync-badge">⏳ Connexion...</span>
 </div>
 
+<!-- PAGE PLANNING -->
 <div id="page-planning" class="page active">
-  <div style="height:10px;"></div>
+  <div style="height:10px"></div>
   <div class="week-nav">
     <button onclick="changeWeek(-1)">‹</button>
     <select class="week-picker" id="week-picker" onchange="jumpWeek(this.value)"></select>
@@ -121,15 +137,17 @@ canvas{display:block;}
   <div class="week-actions">
     <button onclick="addWeek()">+ Semaine</button>
     <button onclick="copyWeek()">⎘ Copier préc.</button>
-    <button onclick="resetWeek()" style="color:#c0392b;">↺ Vider</button>
+    <button onclick="resetWeek()" style="color:#c0392b">↺ Vider</button>
   </div>
+  <!-- 4 stats : séances, km, durée, charge TRIMP -->
   <div class="stats">
     <div class="stat-box"><div class="sv" id="st-s">0</div><div class="sl">séances</div></div>
     <div class="stat-box"><div class="sv" id="st-k">0 km</div><div class="sl">volume</div></div>
-    <div class="stat-box"><div class="sv" id="st-e">0</div><div class="sl">charge</div></div>
+    <div class="stat-box"><div class="sv" id="st-t">0 h</div><div class="sl">durée</div></div>
+    <div class="stat-box"><div class="sv" id="st-e">0</div><div class="sl">TRIMP</div></div>
   </div>
   <div class="ratio-card">
-    <h3>Charge aiguë vs chronique</h3>
+    <h3>Charge aiguë vs chronique (TRIMP)</h3>
     <div class="bar-row">
       <span class="bar-label">ATL — 7j</span>
       <div class="bar-track"><div class="bar-fill" id="bar-atl" style="background:#378ADD;width:0%"></div></div>
@@ -149,64 +167,88 @@ canvas{display:block;}
     <div class="ratio-hint" id="ratio-hint">Ajoute des séances pour calculer ton ratio ATL/CTL</div>
   </div>
   <div class="zones-card">
-    <h3>Zones FC — <span id="zones-title">chargement...</span></h3>
+    <h3>Zones FC — <span id="zones-title">personnalisées</span></h3>
     <div id="zones-display"></div>
   </div>
   <div class="days-list" id="days-list"></div>
 </div>
 
+<!-- PAGE GRAPHIQUE -->
 <div id="page-graph" class="page">
-  <div style="height:10px;"></div>
+  <div style="height:10px"></div>
   <div class="chart-card">
-    <h3>ATL / CTL — toutes les semaines</h3>
-    <p style="font-size:11px;color:#aaa;margin-bottom:8px;">← Fais glisser pour voir tout l'historique</p>
-    <div class="chart-scroll"><canvas id="chart" height="200"></canvas></div>
+    <h3>ATL / CTL — historique complet</h3>
+    <div class="chart-controls">
+      <button onclick="chartZoom(-1)" title="Dézoomer">−</button>
+      <span id="zoom-label">Toutes les semaines</span>
+      <button onclick="chartZoom(1)" title="Zoomer">+</button>
+      <button onclick="chartReset()" title="Réinitialiser" style="font-size:11px">↺</button>
+    </div>
+    <div class="chart-wrap" id="chart-wrap">
+      <canvas id="chart" height="220"></canvas>
+      <div class="chart-tooltip" id="chart-tooltip"></div>
+    </div>
     <div class="chart-legend">
-      <span><span class="ldot" style="background:#378ADD"></span>ATL</span>
-      <span><span class="ldot" style="background:#1D9E75"></span>CTL</span>
+      <span><span class="ldot" style="background:#378ADD"></span>ATL (fatigue 7j)</span>
+      <span><span class="ldot" style="background:#1D9E75"></span>CTL (forme 28j)</span>
       <span><span class="ldot" style="background:#E24B4A"></span>Seuil max</span>
       <span><span class="ldot" style="background:#d4edda;height:8px"></span>Zone optimale</span>
     </div>
   </div>
   <div class="settings-card">
     <h3>Légende zones ATL/CTL</h3>
-    <div style="font-size:12px;color:#555;line-height:1.9;">
+    <div style="font-size:12px;color:#555;line-height:1.9">
       <b style="color:#888">ratio &lt; 0.8</b> — Désentraînement<br>
-      <b style="color:#0F6E56">ratio 0.8–1.0</b> — Récupération<br>
-      <b style="color:#0C447C">ratio 1.0–1.3</b> — Maintien<br>
-      <b style="color:#27500A">ratio 1.3–1.5</b> — Adaptation optimale ✓<br>
-      <b style="color:#c0392b">ratio &gt; 1.5</b> — Sur-entraînement ⚠️
+      <b style="color:#0F6E56">0.8–1.0</b> — Récupération<br>
+      <b style="color:#0C447C">1.0–1.3</b> — Maintien<br>
+      <b style="color:#27500A">1.3–1.5</b> — Adaptation optimale ✓<br>
+      <b style="color:#c0392b">&gt; 1.5</b> — Sur-entraînement ⚠️
     </div>
+  </div>
+  <div class="settings-card">
+    <h3>À propos du TRIMP</h3>
+    <p>Le <b>TRIMP</b> (Training Impulse) est le calcul de charge le plus précis disponible sans capteur de puissance. Il combine la <b>durée réelle</b> de la séance avec l'<b>intensité cardiaque</b> via la réserve de FC (méthode Karvonen), avec un coefficient exponentiel qui pénalise les efforts en zone rouge bien plus que les efforts faciles.</p>
+    <p>Formule : <b>TRIMP = durée (min) × HRR × e^(k × HRR)</b><br>où HRR = (FC - FC repos) / (FC max - FC repos)</p>
   </div>
 </div>
 
+<!-- PAGE PARAMÈTRES -->
 <div id="page-settings" class="page">
-  <div style="height:10px;"></div>
+  <div style="height:10px"></div>
   <div class="settings-card">
     <h3>☁️ Synchronisation</h3>
     <p>Données synchronisées automatiquement entre tous tes appareils via Supabase.</p>
-    <div id="sync-status-detail" style="font-size:12px;color:#888;margin-bottom:10px;"></div>
+    <div id="sync-detail" style="font-size:12px;color:#888;margin-bottom:10px"></div>
     <button class="btn-full success" onclick="syncNow()">↺ Synchroniser maintenant</button>
     <button class="btn-full" onclick="exportJSON()">⬇ Exporter en .json (backup)</button>
-    <label class="btn-full" style="display:block;cursor:pointer;">⬆ Importer un .json<input type="file" accept=".json" onchange="importJSON(event)" style="display:none"></label>
+    <label class="btn-full" style="display:block;cursor:pointer">⬆ Importer un .json<input type="file" accept=".json" onchange="importJSON(event)" style="display:none"></label>
   </div>
   <div class="settings-card">
     <h3>🏃 Profil athlète</h3>
     <div class="param-row">
-      <div class="param-label">FC maximale<span class="param-sub">Pour calculer les zones</span></div>
+      <div class="param-label">FC maximale<span class="param-sub">Pour calculer les zones FC</span></div>
       <div class="param-input"><input type="number" id="p-fcmax" min="150" max="220" onchange="saveParams()"><span>bpm</span></div>
     </div>
     <div class="param-row">
-      <div class="param-label">FC de seuil<span class="param-sub">Seuil anaérobie</span></div>
+      <div class="param-label">FC de seuil<span class="param-sub">Seuil anaérobie (~92% FCmax)</span></div>
       <div class="param-input"><input type="number" id="p-fcseuil" min="120" max="210" onchange="saveParams()"><span>bpm</span></div>
     </div>
     <div class="param-row">
-      <div class="param-label">FC de repos<span class="param-sub">Matin au réveil</span></div>
+      <div class="param-label">FC de repos<span class="param-sub">Matin au réveil — clé pour le TRIMP</span></div>
       <div class="param-input"><input type="number" id="p-fcrepos" min="30" max="100" onchange="saveParams()"><span>bpm</span></div>
     </div>
     <div class="param-row">
-      <div class="param-label">Poids<span class="param-sub">Influence la charge</span></div>
+      <div class="param-label">Poids<span class="param-sub">Influence la charge en montée</span></div>
       <div class="param-input"><input type="number" id="p-poids" min="40" max="150" step="0.5" onchange="saveParams()"><span>kg</span></div>
+    </div>
+    <div class="param-row">
+      <div class="param-label">Sexe<span class="param-sub">Coefficient TRIMP (H=0.64, F=1.67)</span></div>
+      <div class="param-input">
+        <select id="p-sexe" onchange="saveParams()" style="font-size:13px;border:0.5px solid rgba(0,0,0,0.2);border-radius:8px;padding:6px 8px;background:#f9f9f9;outline:none">
+          <option value="H">Homme</option>
+          <option value="F">Femme</option>
+        </select>
+      </div>
     </div>
     <div class="param-row">
       <div class="param-label">Allure EF cible<span class="param-sub">Endurance fondamentale</span></div>
@@ -219,8 +261,9 @@ canvas{display:block;}
   </div>
   <div class="settings-card">
     <h3>📊 Zones FC calculées</h3>
+    <p>Recalculées automatiquement depuis ta FCmax.</p>
     <div id="zones-settings"></div>
-    <button class="btn-full" onclick="saveParams();showToast('Zones recalculées !')" style="margin-top:8px;">↺ Recalculer</button>
+    <button class="btn-full" onclick="saveParams();showToast('✓ Zones recalculées')" style="margin-top:8px">↺ Recalculer les zones</button>
   </div>
   <div class="settings-card">
     <h3>⚙️ Paramètres ATL/CTL</h3>
@@ -233,7 +276,7 @@ canvas{display:block;}
       <div class="param-input"><input type="number" id="p-ctl" min="14" max="42" onchange="saveParams()"><span>j</span></div>
     </div>
     <div class="param-row">
-      <div class="param-label">Ratio min adaptation</div>
+      <div class="param-label">Ratio adaptation min</div>
       <div class="param-input"><input type="number" id="p-rmin" min="1.0" max="1.4" step="0.05" onchange="saveParams()"></div>
     </div>
     <div class="param-row">
@@ -242,7 +285,7 @@ canvas{display:block;}
     </div>
   </div>
   <div class="settings-card">
-    <h3>📅 Semaines</h3>
+    <h3>📅 Gestion des semaines</h3>
     <p id="weeks-count">— semaines planifiées</p>
     <button class="btn-full" onclick="addWeek()">+ Ajouter une semaine</button>
     <button class="btn-full" onclick="addMultiWeeks()">++ Ajouter plusieurs semaines</button>
@@ -254,20 +297,22 @@ canvas{display:block;}
   <div class="settings-card">
     <h3>📲 Installer comme app iPhone</h3>
     <div class="install-steps">
-      1. Ouvre cette URL dans <b>Safari</b><br>
+      1. Ouvre <b>https://jumorice.github.io/Trail-Planning</b> dans Safari<br>
       2. Bouton <b>Partager ↑</b><br>
       3. <b>"Sur l'écran d'accueil"</b><br>
-      4. L'icône 🏔 apparaît — c'est une vraie app !
+      4. L'icône 🏔 apparaît — sync auto PC ↔ iPhone ✓
     </div>
   </div>
 </div>
 
+<!-- BOTTOM NAV -->
 <div class="bottom-nav">
   <button class="bnav-item active" id="bnav-planning" onclick="showPage('planning')"><span class="bnav-icon">📅</span>Planning</button>
   <button class="bnav-item" id="bnav-graph" onclick="showPage('graph')"><span class="bnav-icon">📈</span>Graphique</button>
   <button class="bnav-item" id="bnav-settings" onclick="showPage('settings')"><span class="bnav-icon">⚙️</span>Paramètres</button>
 </div>
 
+<!-- MODAL AJOUT SÉANCE -->
 <div class="modal-bg" id="modal-bg" onclick="if(event.target===this)closeModal()">
   <div class="modal">
     <button class="modal-close" onclick="closeModal()">×</button>
@@ -279,126 +324,167 @@ canvas{display:block;}
 <div class="toast" id="toast"></div>
 
 <script>
-// ─── CONFIG SUPABASE ─────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// CONFIG SUPABASE
+// ═══════════════════════════════════════════════════════
 const SUPA_URL='https://vuzeccxvtpxhkfwvxqjz.supabase.co';
 const SUPA_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ1emVjY3h2dHB4aGtmd3Z4cWp6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIyODExMjgsImV4cCI6MjA5Nzg1NzEyOH0.bKj-DITG0zdbPvqvXcaDUACT9TcQm9yKv5SKKYul-_k';
 const RECORD_ID='julien';
-const LOCAL_KEY='trail_julien_sync_v1';
+const LOCAL_KEY='trail_julien_v4';
 const MAX_WEEKS=100;
 const DAYS=['Lun','Mar','Mer','Jeu','Ven','Sam','Dim'];
 
+// ═══════════════════════════════════════════════════════
+// TYPES DE SÉANCES — avec durée par défaut en minutes
+// ═══════════════════════════════════════════════════════
 const TYPES=[
   {group:'Endurance fondamentale',blocs:[
-    {type:'ef-copine',label:'EF copine',color:'#E6F1FB',tc:'#0C447C',km:5.5,fcPct:0.67,per:'low',intense:false,meta:'<70% FCmax · avec Chloé'},
-    {type:'ef-solo',label:'EF solo',color:'#E1F5EE',tc:'#085041',km:7,fcPct:0.74,per:'low',intense:false,meta:'<75% FCmax · calme'},
-    {type:'recup',label:'Récup active',color:'#F1EFE8',tc:'#444441',km:4,fcPct:0.62,per:'low',intense:false,meta:'<65% FCmax · très lent'},
+    {type:'ef-copine',label:'EF copine',color:'#E6F1FB',tc:'#0C447C',km:5.5,dur:38,fcPct:0.67,intense:false,meta:'<70% FCmax · avec Chloé'},
+    {type:'ef-solo',label:'EF solo',color:'#E1F5EE',tc:'#085041',km:7,dur:45,fcPct:0.74,intense:false,meta:'<75% FCmax · calme'},
+    {type:'recup',label:'Récup active',color:'#F1EFE8',tc:'#444441',km:4,dur:28,fcPct:0.62,intense:false,meta:'<65% FCmax · très lent'},
   ]},
   {group:'Trail spécifique',blocs:[
-    {type:'cotes',label:'Côtes courtes',color:'#FAEEDA',tc:'#633806',km:6,fcPct:0.84,per:'med',intense:true,meta:'4×45s · zone seuil bas'},
-    {type:'long',label:'Sortie longue',color:'#EAF3DE',tc:'#27500A',km:11,fcPct:0.78,per:'med',intense:true,meta:'terrain · <80% FCmax'},
-    {type:'rythme',label:'Footing rythmé',color:'#EEEDFE',tc:'#3C3489',km:8,fcPct:0.85,per:'high',intense:true,meta:'~5\'00/km · tempo'},
-    {type:'tempo',label:'Tempo trail',color:'#FAECE7',tc:'#4A1B0C',km:7,fcPct:0.89,per:'high',intense:true,meta:'allure course · seuil haut'},
-    {type:'frac',label:'Fractionné',color:'#FBEAF0',tc:'#4B1528',km:6,fcPct:0.92,per:'high',intense:true,meta:'6×3\' · FC >90%'},
-    {type:'hike',label:'Marche nordique',color:'#EAF3DE',tc:'#174A1E',km:8,fcPct:0.70,per:'low',intense:false,meta:'bâtons · D+ · <72%'},
+    {type:'cotes',label:'Côtes courtes',color:'#FAEEDA',tc:'#633806',km:6,dur:42,fcPct:0.84,intense:true,meta:'4×45s · zone seuil bas'},
+    {type:'long',label:'Sortie longue',color:'#EAF3DE',tc:'#27500A',km:11,dur:80,fcPct:0.78,intense:true,meta:'terrain · <80% FCmax'},
+    {type:'rythme',label:'Footing rythmé',color:'#EEEDFE',tc:'#3C3489',km:8,dur:40,fcPct:0.85,intense:true,meta:"~5'00/km · tempo"},
+    {type:'tempo',label:'Tempo trail',color:'#FAECE7',tc:'#4A1B0C',km:7,dur:38,fcPct:0.89,intense:true,meta:'allure course · seuil haut'},
+    {type:'frac',label:'Fractionné',color:'#FBEAF0',tc:'#4B1528',km:6,dur:50,fcPct:0.92,intense:true,meta:'6×3\' · FC >90% FCmax'},
+    {type:'hike',label:'Marche nordique',color:'#EAF3DE',tc:'#174A1E',km:8,dur:90,fcPct:0.70,intense:false,meta:'bâtons · D+ · <72%'},
   ]},
   {group:'Renforcement',blocs:[
-    {type:'renfo',label:'Muscu/renfo',color:'#E6F1FB',tc:'#042C53',km:0,fcPct:0.65,per:'med',intense:false,meta:'30–45 min · excentrique'},
-    {type:'mobi',label:'Mobilité',color:'#F1EFE8',tc:'#2C2C2A',km:0,fcPct:0.50,per:'low',intense:false,meta:'20–30 min'},
-    {type:'gainage',label:'Gainage/core',color:'#EAF3DE',tc:'#173404',km:0,fcPct:0.57,per:'low',intense:false,meta:'20 min'},
-    {type:'plio',label:'Pliométrie',color:'#FAEEDA',tc:'#3D2200',km:0,fcPct:0.75,per:'med',intense:true,meta:'20 min · sauts'},
+    {type:'renfo',label:'Muscu/renfo',color:'#E6F1FB',tc:'#042C53',km:0,dur:40,fcPct:0.65,intense:false,meta:'excentrique · 40 min'},
+    {type:'mobi',label:'Mobilité',color:'#F1EFE8',tc:'#2C2C2A',km:0,dur:25,fcPct:0.50,intense:false,meta:'étirements · 25 min'},
+    {type:'gainage',label:'Gainage/core',color:'#EAF3DE',tc:'#173404',km:0,dur:20,fcPct:0.57,intense:false,meta:'stabilisation · 20 min'},
+    {type:'plio',label:'Pliométrie',color:'#FAEEDA',tc:'#3D2200',km:0,dur:20,fcPct:0.75,intense:true,meta:'sauts/bonds · 20 min'},
   ]},
   {group:'Autres activités',blocs:[
-    {type:'foot',label:'Football',color:'#F1EFE8',tc:'#2C2C2A',km:5,fcPct:0.78,per:'med',intense:false,meta:'~1h'},
-    {type:'rando',label:'Randonnée',color:'#EAF3DE',tc:'#27500A',km:12,fcPct:0.65,per:'low',intense:false,meta:'D+ variable'},
-    {type:'velo',label:'Vélo',color:'#E6F1FB',tc:'#185FA5',km:0,fcPct:0.72,per:'low',intense:false,meta:'45–60 min'},
-    {type:'natation',label:'Natation',color:'#E1F5EE',tc:'#0F6E56',km:0,fcPct:0.68,per:'low',intense:false,meta:'30–45 min'},
-    {type:'yoga',label:'Yoga/stretching',color:'#FBEAF0',tc:'#3C0E1F',km:0,fcPct:0.45,per:'low',intense:false,meta:'30–60 min'},
+    {type:'foot',label:'Football',color:'#F1EFE8',tc:'#2C2C2A',km:5,dur:60,fcPct:0.78,intense:false,meta:'~1h · sport co'},
+    {type:'rando',label:'Randonnée',color:'#EAF3DE',tc:'#27500A',km:12,dur:180,fcPct:0.65,intense:false,meta:'D+ variable · ~3h'},
+    {type:'velo',label:'Vélo',color:'#E6F1FB',tc:'#185FA5',km:0,dur:55,fcPct:0.72,intense:false,meta:'45–60 min · croisé'},
+    {type:'natation',label:'Natation',color:'#E1F5EE',tc:'#0F6E56',km:0,dur:40,fcPct:0.68,intense:false,meta:'30–45 min · récup'},
+    {type:'yoga',label:'Yoga/stretching',color:'#FBEAF0',tc:'#3C0E1F',km:0,dur:45,fcPct:0.45,intense:false,meta:'30–60 min'},
   ]},
 ];
 
-const DEFAULT_PARAMS={fcmax:200,fcseuil:183,fcrepos:52,poids:79,allureef:6.5,allureseuil:5.0,atlWindow:7,ctlWindow:28,ratioMin:1.3,ratioMax:1.5};
+const DEFAULT_PARAMS={
+  fcmax:200,fcseuil:183,fcrepos:52,poids:79,sexe:'H',
+  allureef:6.5,allureseuil:5.0,
+  atlWindow:7,ctlWindow:28,ratioMin:1.3,ratioMax:1.5
+};
 
 let weeks=Array.from({length:4},()=>({0:[],1:[],2:[],3:[],4:[],5:[],6:[]}));
-let currentWeek=0, uid=0, params={...DEFAULT_PARAMS};
-let syncTimer=null, lastSyncedAt=null, isSyncing=false;
+let currentWeek=0,uid=0,params={...DEFAULT_PARAMS};
+let syncTimer=null,lastSyncedAt=null,isSyncing=false;
 
-// ─── TOAST ───────────────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// TRIMP — calcul de charge précis (Banister 1991)
+// ═══════════════════════════════════════════════════════
+function trimpCalc(dur, fc){
+  // dur = minutes, fc = FC moyenne bpm
+  const mx=params.fcmax, rs=params.fcrepos;
+  const hrr=Math.max(0, Math.min(1, (fc-rs)/(mx-rs))); // réserve FC 0→1
+  const k=params.sexe==='F'?1.67:0.64; // coeff sexe (Banister)
+  return Math.round(dur * hrr * Math.exp(k * hrr));
+}
+
+function weeklyTrimp(wi){
+  let t=0;
+  Object.values(weeks[wi]).forEach(ss=>ss.forEach(s=>t+=trimpCalc(s.dur,s.fc)));
+  return t;
+}
+
+// ═══════════════════════════════════════════════════════
+// ATL / CTL
+// ═══════════════════════════════════════════════════════
+function computeATLCTL(){
+  const kA=2/(params.atlWindow+1), kC=2/(params.ctlWindow+1);
+  let atl=0,ctl=0;const atlArr=[],ctlArr=[];
+  weeks.forEach((_,wi)=>{
+    const de=weeklyTrimp(wi)/7;
+    for(let d=0;d<7;d++){atl+=kA*(de-atl);ctl+=kC*(de-ctl);}
+    atlArr.push(Math.round(atl));ctlArr.push(Math.round(ctl));
+  });
+  return{atlArr,ctlArr};
+}
+
+// ═══════════════════════════════════════════════════════
+// ZONES FC
+// ═══════════════════════════════════════════════════════
+function getZones(){
+  const mx=params.fcmax;
+  return[
+    {name:'Z1 — Récupération',pctMin:0,pctMax:0.60,color:'#6EC6FF'},
+    {name:'Z2 — Endurance fondamentale',pctMin:0.60,pctMax:0.72,color:'#50C878'},
+    {name:'Z3 — Aérobie modéré',pctMin:0.72,pctMax:0.82,color:'#FFD700'},
+    {name:'Z4 — Seuil',pctMin:0.82,pctMax:0.92,color:'#FF8C00'},
+    {name:'Z5 — VO2max',pctMin:0.92,pctMax:1.00,color:'#E24B4A'},
+  ].map(z=>({...z,min:Math.round(mx*z.pctMin),max:Math.round(mx*z.pctMax)}));
+}
+function fcForZone(pct){return Math.round(params.fcmax*pct);}
+function getZoneName(fc){const z=getZones().find(z=>fc>=z.min&&fc<=z.max);return z?z.name.split('—')[0].trim():'?';}
+function getZoneColor(fc){const z=getZones().find(z=>fc>=z.min&&fc<=z.max);return z?z.color:'#ccc';}
+
+// ═══════════════════════════════════════════════════════
+// INSTANCES DE SÉANCES
+// ═══════════════════════════════════════════════════════
+function makeInstance(type){
+  const all=TYPES.flatMap(g=>g.blocs);
+  const t=all.find(x=>x.type===type);
+  return{uid:uid++,type:t.type,label:t.label,color:t.color,tc:t.tc,
+    km:t.km,dur:t.dur,fc:fcForZone(t.fcPct),intense:t.intense};
+}
+
+// ═══════════════════════════════════════════════════════
+// TOAST
+// ═══════════════════════════════════════════════════════
 function showToast(msg){
   const t=document.getElementById('toast');
   t.textContent=msg;t.classList.add('show');
   setTimeout(()=>t.classList.remove('show'),2500);
 }
 
-// ─── SUPABASE ────────────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// SUPABASE SYNC
+// ═══════════════════════════════════════════════════════
 function setSyncBadge(state,msg){
   const b=document.getElementById('sync-badge');
-  b.className='sync-badge '+state;
-  b.textContent=msg;
-  const d=document.getElementById('sync-status-detail');
+  b.className='sync-badge '+state;b.textContent=msg;
+  const d=document.getElementById('sync-detail');
   if(d) d.textContent=lastSyncedAt?`Dernière sync : ${lastSyncedAt.toLocaleTimeString('fr-FR')}`:'Pas encore synchronisé';
 }
-
-async function supaFetch(method,body=null){
-  const opts={method,headers:{'apikey':SUPA_KEY,'Authorization':'Bearer '+SUPA_KEY,'Content-Type':'application/json','Prefer':'return=minimal'}};
-  if(body) opts.body=JSON.stringify(body);
-  return fetch(`${SUPA_URL}/rest/v1/planning?id=eq.${RECORD_ID}`,opts);
-}
-
 async function syncNow(){
   if(isSyncing) return;
   isSyncing=true;setSyncBadge('syncing','⏳ Sync...');
   try{
-    // d'abord on récupère la version distante
-    const res=await fetch(`${SUPA_URL}/rest/v1/planning?id=eq.${RECORD_ID}&select=data,updated_at`,{
-      headers:{'apikey':SUPA_KEY,'Authorization':'Bearer '+SUPA_KEY}
-    });
-    if(!res.ok) throw new Error('Erreur réseau');
+    const res=await fetch(`${SUPA_URL}/rest/v1/planning?id=eq.${RECORD_ID}&select=data,updated_at`,
+      {headers:{'apikey':SUPA_KEY,'Authorization':'Bearer '+SUPA_KEY}});
+    if(!res.ok) throw new Error();
     const rows=await res.json();
     if(rows.length>0){
-      const remote=rows[0];
-      const remoteTime=new Date(remote.updated_at);
+      const remoteTime=new Date(rows[0].updated_at);
       const localTime=loadLocalTimestamp();
-      // on garde la version la plus récente
       if(!localTime||remoteTime>localTime){
-        const d=remote.data;
+        const d=rows[0].data;
         if(d.weeks) weeks=d.weeks;
         if(d.params) params={...DEFAULT_PARAMS,...d.params};
         if(d.uid) uid=d.uid;
         if(d.currentWeek!==undefined) currentWeek=d.currentWeek;
         saveLocal();loadParamsToUI();render();
-        showToast('✓ Données récupérées depuis le cloud');
-      } else {
-        // notre version est plus récente : on pousse
-        await pushToSupabase();
-      }
-    } else {
-      await pushToSupabase();
-    }
-    lastSyncedAt=new Date();
-    setSyncBadge('ok','✓ Synchronisé');
-  }catch(e){
-    setSyncBadge('error','⚠ Hors ligne');
-    showToast('Mode hors ligne — données sauvegardées localement');
-  }
+        showToast('✓ Données cloud récupérées');
+      } else { await pushToSupabase(); }
+    } else { await pushToSupabase(); }
+    lastSyncedAt=new Date();setSyncBadge('ok','✓ Synchronisé');
+  }catch(e){setSyncBadge('error','⚠ Hors ligne');showToast('Mode hors ligne — sauvegarde locale');}
   isSyncing=false;
 }
-
 async function pushToSupabase(){
-  const payload={id:RECORD_ID,data:{weeks,params,uid,currentWeek},updated_at:new Date().toISOString()};
-  const res=await supaFetch('POST',payload);
-  if(!res.ok){
-    // essai PATCH si la ligne existe déjà
-    await fetch(`${SUPA_URL}/rest/v1/planning?id=eq.${RECORD_ID}`,{
-      method:'PATCH',
-      headers:{'apikey':SUPA_KEY,'Authorization':'Bearer '+SUPA_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},
-      body:JSON.stringify({data:{weeks,params,uid,currentWeek},updated_at:new Date().toISOString()})
-    });
-  }
+  const body={id:RECORD_ID,data:{weeks,params,uid,currentWeek},updated_at:new Date().toISOString()};
+  const h={'apikey':SUPA_KEY,'Authorization':'Bearer '+SUPA_KEY,'Content-Type':'application/json','Prefer':'return=minimal'};
+  let res=await fetch(`${SUPA_URL}/rest/v1/planning`,{method:'POST',headers:h,body:JSON.stringify(body)});
+  if(!res.ok) res=await fetch(`${SUPA_URL}/rest/v1/planning?id=eq.${RECORD_ID}`,{method:'PATCH',headers:h,body:JSON.stringify({data:{weeks,params,uid,currentWeek},updated_at:new Date().toISOString()})});
 }
-
 function schedulePush(){
-  saveLocal();
-  clearTimeout(syncTimer);
+  saveLocal();clearTimeout(syncTimer);
   syncTimer=setTimeout(async()=>{
     setSyncBadge('syncing','⏳ Sync...');
     try{await pushToSupabase();lastSyncedAt=new Date();setSyncBadge('ok','✓ Synchronisé');}
@@ -406,7 +492,9 @@ function schedulePush(){
   },1500);
 }
 
-// ─── LOCAL STORAGE ───────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// LOCAL STORAGE
+// ═══════════════════════════════════════════════════════
 function saveLocal(){
   try{localStorage.setItem(LOCAL_KEY,JSON.stringify({weeks,params,uid,currentWeek,savedAt:new Date().toISOString()}));}catch(e){}
 }
@@ -423,7 +511,9 @@ function loadLocalTimestamp(){
   try{const r=localStorage.getItem(LOCAL_KEY);if(!r) return null;return new Date(JSON.parse(r).savedAt);}catch(e){return null;}
 }
 
-// ─── EXPORT / IMPORT ─────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// EXPORT / IMPORT
+// ═══════════════════════════════════════════════════════
 function exportJSON(){
   const blob=new Blob([JSON.stringify({weeks,params,uid,exportedAt:new Date().toISOString()},null,2)],{type:'application/json'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);
@@ -436,13 +526,13 @@ function importJSON(e){
     try{
       const d=JSON.parse(ev.target.result);if(!d.weeks) throw new Error();
       weeks=d.weeks;params={...DEFAULT_PARAMS,...(d.params||{})};uid=d.uid||0;
-      schedulePush();loadParamsToUI();render();showToast('✓ Données importées et synchronisées');
+      schedulePush();loadParamsToUI();render();showToast('✓ Données importées');
     }catch(err){showToast('Fichier invalide');}
   };
   r.readAsText(file);e.target.value='';
 }
 function clearAll(){
-  if(!confirm('Tout effacer ? Action irréversible sur tous tes appareils.')) return;
+  if(!confirm('Tout effacer sur tous les appareils ? Irréversible.')) return;
   weeks=Array.from({length:4},()=>({0:[],1:[],2:[],3:[],4:[],5:[],6:[]}));
   currentWeek=0;uid=0;params={...DEFAULT_PARAMS};
   schedulePush();loadParamsToUI();render();showToast('Données effacées');
@@ -452,59 +542,25 @@ function exportSemaine(){
   DAYS.forEach((day,i)=>{
     const ss=weeks[currentWeek][i];
     if(!ss.length) lines.push(`${day} : repos`);
-    else ss.forEach(s=>lines.push(`${day} : ${s.label}${s.km>0?' — '+s.km+' km':''} · FC ~${s.fc} bpm · charge ~${effortCalc(s.km,s.fc,s.per)}`));
+    else ss.forEach(s=>{
+      const t=trimpCalc(s.dur,s.fc);
+      lines.push(`${day} : ${s.label}${s.km>0?' — '+s.km+' km':''} · ${s.dur} min · FC ~${s.fc} bpm · TRIMP ${t}`);
+    });
   });
   const{atlArr,ctlArr}=computeATLCTL();
   const atl=atlArr[currentWeek]||0,ctl=ctlArr[currentWeek]||0;
-  lines.push('');lines.push(`ATL ${atl} · CTL ${ctl} · ratio ${ctl>0?(atl/ctl).toFixed(2):'—'}`);
+  lines.push('');lines.push(`TRIMP sem. ${weeklyTrimp(currentWeek)} · ATL ${atl} · CTL ${ctl} · ratio ${ctl>0?(atl/ctl).toFixed(2):'—'}`);
   navigator.clipboard.writeText(lines.join('\n')).then(()=>showToast('✓ Copié !')).catch(()=>prompt('',lines.join('\n')));
 }
 
-// ─── ZONES FC ────────────────────────────────────────────────────────
-function getZones(){
-  const mx=params.fcmax;
-  return[
-    {name:'Z1 — Récupération',pctMin:0,pctMax:0.60,color:'#6EC6FF'},
-    {name:'Z2 — Endurance fondamentale',pctMin:0.60,pctMax:0.72,color:'#50C878'},
-    {name:'Z3 — Aérobie modéré',pctMin:0.72,pctMax:0.82,color:'#FFD700'},
-    {name:'Z4 — Seuil',pctMin:0.82,pctMax:0.92,color:'#FF8C00'},
-    {name:'Z5 — VO2max',pctMin:0.92,pctMax:1.00,color:'#E24B4A'},
-  ].map(z=>({...z,min:Math.round(mx*z.pctMin),max:Math.round(mx*z.pctMax)}));
-}
-function fcForZone(pct){return Math.round(params.fcmax*pct);}
-function getZoneName(fc){const z=getZones().find(z=>fc>=z.min&&fc<=z.max);return z?z.name.split(' — ')[0]:'Z?';}
-
-// ─── CALCUL EFFORT ───────────────────────────────────────────────────
-function effortCalc(km,fc,per){
-  const mx=params.fcmax,rs=params.fcrepos;
-  const hrr=Math.max(0,(fc-rs)/(mx-rs));
-  const intensity=hrr*hrr;
-  if(km===0){const base=per==='low'?25:per==='med'?50:80;return Math.round(base*Math.max(0.2,intensity));}
-  const pf=1+(params.poids-70)*0.002;
-  const base=per==='low'?8:per==='med'?15:22;
-  return Math.round(km*base*Math.max(0.3,intensity)*pf);
-}
-
-// ─── ATL / CTL ───────────────────────────────────────────────────────
-function weeklyEffort(wi){let e=0;Object.values(weeks[wi]).forEach(s=>s.forEach(x=>e+=effortCalc(x.km,x.fc,x.per)));return e;}
-function computeATLCTL(){
-  const kA=2/(params.atlWindow+1),kC=2/(params.ctlWindow+1);
-  let atl=0,ctl=0;const atlArr=[],ctlArr=[];
-  weeks.forEach((_,wi)=>{const de=weeklyEffort(wi)/7;for(let d=0;d<7;d++){atl+=kA*(de-atl);ctl+=kC*(de-ctl);}atlArr.push(Math.round(atl));ctlArr.push(Math.round(ctl));});
-  return{atlArr,ctlArr};
-}
-
-// ─── INSTANCES ───────────────────────────────────────────────────────
-function makeInstance(type){
-  const all=TYPES.flatMap(g=>g.blocs);const t=all.find(x=>x.type===type);
-  return{uid:uid++,type:t.type,label:t.label,color:t.color,tc:t.tc,km:t.km,fc:fcForZone(t.fcPct),per:t.per,intense:t.intense};
-}
-
-// ─── PARAMÈTRES ──────────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// PARAMÈTRES
+// ═══════════════════════════════════════════════════════
 function loadParamsToUI(){
   ['fcmax','fcseuil','fcrepos','poids','allureef','allureseuil'].forEach(k=>{
     const el=document.getElementById('p-'+k);if(el) el.value=params[k];
   });
+  const sexeEl=document.getElementById('p-sexe');if(sexeEl) sexeEl.value=params.sexe||'H';
   document.getElementById('p-atl').value=params.atlWindow;
   document.getElementById('p-ctl').value=params.ctlWindow;
   document.getElementById('p-rmin').value=params.ratioMin;
@@ -516,6 +572,7 @@ function saveParams(){
   params.fcseuil=+document.getElementById('p-fcseuil').value||183;
   params.fcrepos=+document.getElementById('p-fcrepos').value||52;
   params.poids=+document.getElementById('p-poids').value||79;
+  params.sexe=document.getElementById('p-sexe').value||'H';
   params.allureef=+document.getElementById('p-allureef').value||6.5;
   params.allureseuil=+document.getElementById('p-allureseuil').value||5.0;
   params.atlWindow=+document.getElementById('p-atl').value||7;
@@ -532,10 +589,12 @@ function renderZonesSettings(){
 function renderZonesDisplay(){
   const el=document.getElementById('zones-display');if(!el) return;
   el.innerHTML=getZones().map(z=>`<div class="zone-row"><span class="zone-dot" style="background:${z.color}"></span><span class="zone-name">${z.name}</span><span class="zone-range">${z.min}–${z.max}</span></div>`).join('');
-  const t=document.getElementById('zones-title');if(t) t.textContent=`FCmax ${params.fcmax} · seuil ${params.fcseuil}`;
+  const t=document.getElementById('zones-title');if(t) t.textContent=`FCmax ${params.fcmax} · repos ${params.fcrepos}`;
 }
 
-// ─── NAVIGATION ──────────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// NAVIGATION
+// ═══════════════════════════════════════════════════════
 function showPage(p){
   document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
   document.querySelectorAll('.bnav-item').forEach(x=>x.classList.remove('active'));
@@ -551,7 +610,9 @@ function updateWeekPicker(){
   sel.innerHTML=weeks.map((_,i)=>`<option value="${i}"${i===currentWeek?' selected':''}>Semaine ${i+1}</option>`).join('');
 }
 
-// ─── MODAL ───────────────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// MODAL
+// ═══════════════════════════════════════════════════════
 function openModal(dayIdx){
   document.getElementById('modal-title').textContent='Ajouter — '+DAYS[dayIdx];
   const content=document.getElementById('modal-content');content.innerHTML='';
@@ -562,7 +623,8 @@ function openModal(dayIdx){
     g.blocs.forEach(t=>{
       const fc=fcForZone(t.fcPct);
       const btn=document.createElement('button');btn.className='bloc-btn';btn.style.background=t.color;btn.style.color=t.tc;
-      btn.innerHTML=`<div class="bb">${t.label}</div><div class="bm">${t.meta} · ~${fc} bpm</div>`;
+      const trimp=trimpCalc(t.dur,fc);
+      btn.innerHTML=`<div class="bb">${t.label}</div><div class="bm">${t.meta}<br>${t.dur} min · ~${fc} bpm · TRIMP ${trimp}</div>`;
       btn.onclick=()=>{weeks[currentWeek][dayIdx].push(makeInstance(t.type));render();schedulePush();closeModal();};
       grid.appendChild(btn);
     });
@@ -572,10 +634,16 @@ function openModal(dayIdx){
 }
 function closeModal(){document.getElementById('modal-bg').classList.remove('open');}
 
-// ─── RENDER ──────────────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// RENDER PRINCIPAL
+// ═══════════════════════════════════════════════════════
 function render(){
-  updateWeekPicker();renderDays();updateStats();renderZonesDisplay();
+  updateWeekPicker();
+  renderDays();
+  updateStats();
+  renderZonesDisplay();
 }
+
 function renderDays(){
   const list=document.getElementById('days-list');list.innerHTML='';
   DAYS.forEach((day,i)=>{
@@ -583,8 +651,10 @@ function renderDays(){
     const block=document.createElement('div');block.className='day-block';
     const prevInt=i>0&&weeks[currentWeek][i-1].some(s=>s.intense);
     const thisInt=sessions.some(s=>s.intense);
-    const totalE=sessions.reduce((a,s)=>a+effortCalc(s.km,s.fc,s.per),0);
-    const summary=!sessions.length?'repos':sessions.map(s=>s.label).join(', ')+` (${totalE})`;
+    const totalT=sessions.reduce((a,s)=>a+trimpCalc(s.dur,s.fc),0);
+    const totalDur=sessions.reduce((a,s)=>a+s.dur,0);
+    let summary='repos';
+    if(sessions.length) summary=sessions.map(s=>s.label).join(', ')+` · ${Math.round(totalDur/60*10)/10}h · TRIMP ${totalT}`;
     block.innerHTML=`<div class="day-header"><span class="dname">${day}</span><span class="dsummary">${summary}</span><div class="dadd" onclick="openModal(${i})">+</div></div>`;
     if(prevInt&&thisInt){const w=document.createElement('div');w.className='warn-day';w.textContent='⚠ Séance intense dos à dos';block.appendChild(w);}
     if(sessions.length){
@@ -592,84 +662,227 @@ function renderDays(){
       sessions.forEach(s=>{
         const card=document.createElement('div');card.className='scard';card.style.background=s.color;card.style.color=s.tc;
         const kmF=s.km>0?`<div class="field"><label>km</label><input type="number" min="0" max="80" step="0.5" value="${s.km}" onchange="updateF(${i},${s.uid},'km',this.value)"></div>`:'';
-        card.innerHTML=`<div class="st">${s.label} <span class="zone-badge">${getZoneName(s.fc)}</span></div><button class="del" onclick="removeS(${i},${s.uid})">×</button><div class="fields">${kmF}<div class="field"><label>FC</label><input type="number" min="80" max="${params.fcmax}" step="1" value="${s.fc}" onchange="updateF(${i},${s.uid},'fc',this.value)"></div></div><div class="eff" id="eff-${s.uid}">charge ~${effortCalc(s.km,s.fc,s.per)} · ${Math.round(s.fc/params.fcmax*100)}% FCmax</div>`;
+        const zoneColor=getZoneColor(s.fc);
+        card.innerHTML=`
+          <div class="st">${s.label} <span class="zone-badge" style="background:${zoneColor}22;color:${zoneColor}">${getZoneName(s.fc)}</span></div>
+          <button class="del" onclick="removeS(${i},${s.uid})">×</button>
+          <div class="fields">
+            ${kmF}
+            <div class="field"><label>durée</label><input type="number" min="5" max="600" step="5" value="${s.dur}" onchange="updateF(${i},${s.uid},'dur',this.value)"><label>min</label></div>
+            <div class="field"><label>FC</label><input type="number" min="80" max="${params.fcmax}" step="1" value="${s.fc}" onchange="updateF(${i},${s.uid},'fc',this.value)"></div>
+          </div>
+          <div class="eff" id="eff-${s.uid}">${effLine(s)}</div>
+        `;
         cont.appendChild(card);
       });block.appendChild(cont);
     }
     list.appendChild(block);
   });
 }
+
+function effLine(s){
+  const t=trimpCalc(s.dur,s.fc);
+  const hrr=Math.max(0,Math.min(1,(s.fc-params.fcrepos)/(params.fcmax-params.fcrepos)));
+  return `TRIMP ${t} · ${s.dur} min · ${Math.round(hrr*100)}% réserve FC · ${Math.round(s.fc/params.fcmax*100)}% FCmax`;
+}
+
 function removeS(dayIdx,u){weeks[currentWeek][dayIdx]=weeks[currentWeek][dayIdx].filter(x=>x.uid!==u);render();schedulePush();}
 function updateF(dayIdx,u,field,val){
   const s=weeks[currentWeek][dayIdx].find(x=>x.uid===u);if(!s) return;
   s[field]=parseFloat(val);
   const el=document.getElementById('eff-'+u);
-  if(el) el.textContent=`charge ~${effortCalc(s.km,s.fc,s.per)} · ${Math.round(s.fc/params.fcmax*100)}% FCmax`;
+  if(el) el.textContent=effLine(s);
   updateStats();schedulePush();
 }
+
 function updateStats(){
-  const wd=weeks[currentWeek];let totalKm=0,totalEffort=0,totalS=0;
-  Object.values(wd).forEach(ss=>ss.forEach(s=>{totalKm+=s.km;totalEffort+=effortCalc(s.km,s.fc,s.per);totalS++;}));
+  const wd=weeks[currentWeek];
+  let totalKm=0,totalTrimp=0,totalS=0,totalDur=0;
+  Object.values(wd).forEach(ss=>ss.forEach(s=>{totalKm+=s.km;totalTrimp+=trimpCalc(s.dur,s.fc);totalS++;totalDur+=s.dur;}));
   document.getElementById('st-s').textContent=totalS;
   document.getElementById('st-k').textContent=totalKm.toFixed(1)+' km';
-  document.getElementById('st-e').textContent=Math.round(totalEffort);
+  document.getElementById('st-t').textContent=totalDur>=60?(Math.floor(totalDur/60)+'h'+(totalDur%60?String(totalDur%60).padStart(2,'0'):'')):(totalDur+'min');
+  document.getElementById('st-e').textContent=Math.round(totalTrimp);
+
   const{atlArr,ctlArr}=computeATLCTL();
   const atl=atlArr[currentWeek]||0,ctl=ctlArr[currentWeek]||0;
-  const maxBar=Math.max(atl,ctl,50),maxC=Math.round(ctl*params.ratioMax);
+  const maxBar=Math.max(atl,ctl,20),maxC=Math.round(ctl*params.ratioMax);
   document.getElementById('bv-atl').textContent=atl;document.getElementById('bv-ctl').textContent=ctl;document.getElementById('bv-max').textContent=maxC;
   document.getElementById('bar-atl').style.width=Math.min(100,Math.round(atl/maxBar*100))+'%';
   document.getElementById('bar-ctl').style.width=Math.min(100,Math.round(ctl/maxBar*100))+'%';
   document.getElementById('bar-max').style.width=Math.min(100,Math.round(maxC/maxBar*100))+'%';
+
   const ratio=ctl>0?atl/ctl:0;
   let zone='—',bg='#eee',tc='#555',hint='Ajoute des séances pour calculer ton ratio ATL/CTL';
   if(ratio>0&&ratio<0.8){zone='Désentraînement';bg='#D3D1C7';tc='#444';hint='Volume trop faible — augmente progressivement.';}
   else if(ratio>=0.8&&ratio<1){zone='Récupération';bg='#E1F5EE';tc='#085041';hint='Bonne période avant une course ou pour récupérer.';}
-  else if(ratio>=1&&ratio<params.ratioMin){zone='Maintien';bg='#B5D4F4';tc='#0C447C';hint='Charge stable — tu maintiens ta forme.';}
-  else if(ratio>=params.ratioMin&&ratio<params.ratioMax){zone='Adaptation ✓';bg='#C0DD97';tc='#27500A';hint='Zone optimale — le corps s\'adapte sans risque.';}
+  else if(ratio>=1&&ratio<params.ratioMin){zone='Maintien';bg='#B5D4F4';tc='#0C447C';hint='Charge stable — tu maintiens ta forme actuelle.';}
+  else if(ratio>=params.ratioMin&&ratio<params.ratioMax){zone='Adaptation ✓';bg='#C0DD97';tc='#27500A';hint="Zone optimale — le corps s'adapte sans risque de blessure.";}
   else if(ratio>=params.ratioMax){zone='Sur-entraînement ⚠️';bg='#F7C1C1';tc='#791F1F';hint='Attention — risque de blessure. Réduis la charge.';}
   const pill=document.getElementById('ratio-pill');pill.textContent=`ratio ${ratio.toFixed(2)} — ${zone}`;pill.style.background=bg;pill.style.color=tc;
   document.getElementById('ratio-hint').textContent=hint;
 }
+
+// ═══════════════════════════════════════════════════════
+// GRAPHIQUE — zoom + infobulles
+// ═══════════════════════════════════════════════════════
+let chartZoomLevel=0; // 0=tout, 1=24sem, 2=12sem, 3=6sem
+const ZOOM_LEVELS=[null,24,12,6];
+const ZOOM_LABELS=['Toutes les semaines','24 dernières semaines','12 dernières semaines','6 dernières semaines'];
+
+function chartZoom(dir){
+  chartZoomLevel=Math.max(0,Math.min(ZOOM_LEVELS.length-1,chartZoomLevel+dir));
+  document.getElementById('zoom-label').textContent=ZOOM_LABELS[chartZoomLevel];
+  renderChart();
+}
+function chartReset(){chartZoomLevel=0;document.getElementById('zoom-label').textContent=ZOOM_LABELS[0];renderChart();}
+
 function renderChart(){
-  const canvas=document.getElementById('chart');const ctx=canvas.getContext('2d');
-  const n=weeks.length;const W=Math.max(canvas.parentElement.offsetWidth||340,n*28);const H=200;
-  canvas.width=W;canvas.height=H;ctx.clearRect(0,0,W,H);
+  const canvas=document.getElementById('chart');
+  const ctx=canvas.getContext('2d');
   const{atlArr,ctlArr}=computeATLCTL();
-  const maxV=Math.max(...atlArr,...ctlArr,80)*1.6;
-  const pad={l:30,r:12,t:8,b:24};const cw=W-pad.l-pad.r,ch=H-pad.t-pad.b;
-  function xOf(i){return pad.l+i/(n-1||1)*cw;}function yOf(v){return pad.t+ch-(v/maxV)*ch;}
-  ctx.fillStyle='rgba(100,200,120,0.12)';ctx.beginPath();ctx.moveTo(xOf(0),yOf(ctlArr[0]*params.ratioMax));
-  ctlArr.forEach((v,i)=>ctx.lineTo(xOf(i),yOf(v*params.ratioMax)));
-  for(let i=n-1;i>=0;i--) ctx.lineTo(xOf(i),yOf(ctlArr[i]*params.ratioMin));
+  const n=weeks.length;
+
+  // calcul fenêtre zoom
+  const maxShow=ZOOM_LEVELS[chartZoomLevel];
+  const startIdx=maxShow?Math.max(0,n-maxShow):0;
+  const atlV=atlArr.slice(startIdx);
+  const ctlV=ctlArr.slice(startIdx);
+  const nV=atlV.length;
+
+  const W=Math.max(canvas.parentElement.offsetWidth||340, nV*32);
+  const H=220;
+  canvas.width=W;canvas.height=H;ctx.clearRect(0,0,W,H);
+
+  const maxV=Math.max(...atlV,...ctlV,20)*1.65;
+  const pad={l:34,r:14,t:10,b:26};
+  const cw=W-pad.l-pad.r,ch=H-pad.t-pad.b;
+
+  function xOf(i){return pad.l+i/(nV-1||1)*cw;}
+  function yOf(v){return pad.t+ch-(v/maxV)*ch;}
+
+  // zone optimale
+  ctx.fillStyle='rgba(100,200,120,0.12)';
+  ctx.beginPath();ctx.moveTo(xOf(0),yOf(ctlV[0]*params.ratioMax));
+  ctlV.forEach((v,i)=>ctx.lineTo(xOf(i),yOf(v*params.ratioMax)));
+  for(let i=nV-1;i>=0;i--) ctx.lineTo(xOf(i),yOf(ctlV[i]*params.ratioMin));
   ctx.closePath();ctx.fill();
-  ctx.strokeStyle='#E24B4A';ctx.lineWidth=1;ctx.setLineDash([4,3]);ctx.beginPath();
-  ctlArr.forEach((v,i)=>i===0?ctx.moveTo(xOf(0),yOf(v*params.ratioMax)):ctx.lineTo(xOf(i),yOf(v*params.ratioMax)));
+
+  // seuil sur-entraînement
+  ctx.strokeStyle='#E24B4A';ctx.lineWidth=1.5;ctx.setLineDash([5,4]);
+  ctx.beginPath();ctlV.forEach((v,i)=>i===0?ctx.moveTo(xOf(0),yOf(v*params.ratioMax)):ctx.lineTo(xOf(i),yOf(v*params.ratioMax)));
   ctx.stroke();ctx.setLineDash([]);
-  ctx.strokeStyle='#1D9E75';ctx.lineWidth=2;ctx.beginPath();ctlArr.forEach((v,i)=>i===0?ctx.moveTo(xOf(0),yOf(v)):ctx.lineTo(xOf(i),yOf(v)));ctx.stroke();
-  ctx.strokeStyle='#378ADD';ctx.lineWidth=2;ctx.beginPath();atlArr.forEach((v,i)=>i===0?ctx.moveTo(xOf(0),yOf(v)):ctx.lineTo(xOf(i),yOf(v)));ctx.stroke();
-  ctx.fillStyle='#378ADD';ctx.beginPath();ctx.arc(xOf(currentWeek),yOf(atlArr[currentWeek]),5,0,Math.PI*2);ctx.fill();
-  ctx.fillStyle='#1D9E75';ctx.beginPath();ctx.arc(xOf(currentWeek),yOf(ctlArr[currentWeek]),5,0,Math.PI*2);ctx.fill();
-  const step=n>50?10:n>20?5:n>10?2:1;ctx.textAlign='center';
-  weeks.forEach((_,i)=>{
-    if(i%step!==0&&i!==currentWeek&&i!==n-1) return;
-    ctx.fillStyle=i===currentWeek?'#1a1a1a':'#aaa';ctx.font=(i===currentWeek?'bold ':'')+'9px -apple-system,sans-serif';
-    ctx.fillText('S'+(i+1),xOf(i),H-4);
+
+  // CTL
+  ctx.strokeStyle='#1D9E75';ctx.lineWidth=2.5;ctx.beginPath();
+  ctlV.forEach((v,i)=>i===0?ctx.moveTo(xOf(0),yOf(v)):ctx.lineTo(xOf(i),yOf(v)));ctx.stroke();
+
+  // ATL
+  ctx.strokeStyle='#378ADD';ctx.lineWidth=2.5;ctx.beginPath();
+  atlV.forEach((v,i)=>i===0?ctx.moveTo(xOf(0),yOf(v)):ctx.lineTo(xOf(i),yOf(v)));ctx.stroke();
+
+  // points sur les données
+  atlV.forEach((v,i)=>{
+    ctx.fillStyle='#378ADD';ctx.beginPath();ctx.arc(xOf(i),yOf(v),3,0,Math.PI*2);ctx.fill();
   });
-  ctx.fillStyle='#bbb';ctx.font='9px -apple-system,sans-serif';ctx.textAlign='right';
-  [0,50,100,150,200].forEach(v=>{if(v<=maxV){const y=yOf(v);ctx.fillText(v,pad.l-3,y+3);ctx.strokeStyle='rgba(0,0,0,0.04)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(W-pad.r,y);ctx.stroke();}});
+  ctlV.forEach((v,i)=>{
+    ctx.fillStyle='#1D9E75';ctx.beginPath();ctx.arc(xOf(i),yOf(v),3,0,Math.PI*2);ctx.fill();
+  });
+
+  // semaine courante
+  const curIdx=currentWeek-startIdx;
+  if(curIdx>=0&&curIdx<nV){
+    ctx.fillStyle='#378ADD';ctx.beginPath();ctx.arc(xOf(curIdx),yOf(atlV[curIdx]),6,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#1D9E75';ctx.beginPath();ctx.arc(xOf(curIdx),yOf(ctlV[curIdx]),6,0,Math.PI*2);ctx.fill();
+    // ligne verticale semaine courante
+    ctx.strokeStyle='rgba(0,0,0,0.08)';ctx.lineWidth=1;ctx.setLineDash([3,3]);
+    ctx.beginPath();ctx.moveTo(xOf(curIdx),pad.t);ctx.lineTo(xOf(curIdx),H-pad.b);ctx.stroke();ctx.setLineDash([]);
+  }
+
+  // labels semaines
+  const step=nV>40?8:nV>20?4:nV>10?2:1;
+  ctx.textAlign='center';
+  for(let i=0;i<nV;i++){
+    const realIdx=startIdx+i;
+    if(i%step!==0&&realIdx!==currentWeek&&i!==nV-1) continue;
+    ctx.fillStyle=realIdx===currentWeek?'#1a1a1a':'#bbb';
+    ctx.font=(realIdx===currentWeek?'bold ':'')+'9px -apple-system,sans-serif';
+    ctx.fillText('S'+(realIdx+1),xOf(i),H-5);
+  }
+
+  // axes Y
+  ctx.fillStyle='#ccc';ctx.font='9px -apple-system,sans-serif';ctx.textAlign='right';
+  const yTicks=[0,20,50,100,150,200,300].filter(v=>v<=maxV);
+  yTicks.forEach(v=>{
+    const y=yOf(v);ctx.fillText(v,pad.l-4,y+3);
+    ctx.strokeStyle='rgba(0,0,0,0.04)';ctx.lineWidth=1;
+    ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(W-pad.r,y);ctx.stroke();
+  });
+
+  // stocker pour tooltip
+  canvas._atlV=atlV;canvas._ctlV=ctlV;canvas._startIdx=startIdx;
+  canvas._xOf=xOf;canvas._yOf=yOf;canvas._nV=nV;canvas._pad=pad;canvas._H=H;canvas._W=W;canvas._maxV=maxV;
 }
 
-// ─── GESTION SEMAINES ────────────────────────────────────────────────
+// ─── TOOLTIP GRAPHIQUE ───────────────────────────────
+function setupChartTooltip(){
+  const canvas=document.getElementById('chart');
+  const tooltip=document.getElementById('chart-tooltip');
+
+  function handleMove(clientX,clientY){
+    if(!canvas._atlV) return;
+    const rect=canvas.getBoundingClientRect();
+    const x=clientX-rect.left;
+    const{atlV,ctlV,startIdx,xOf,nV,pad,H}=canvas;
+    // trouver l'index le plus proche
+    let closestI=0,minDist=Infinity;
+    for(let i=0;i<nV;i++){const d=Math.abs(xOf(i)-x);if(d<minDist){minDist=d;closestI=i;}}
+    if(minDist>30){tooltip.style.display='none';return;}
+
+    const realIdx=startIdx+closestI;
+    const atl=atlV[closestI],ctl=ctlV[closestI];
+    const ratio=ctl>0?(atl/ctl).toFixed(2):'—';
+    const trimp=weeklyTrimp(realIdx);
+    let zoneLabel='—';
+    const r=ctl>0?atl/ctl:0;
+    if(r<0.8) zoneLabel='Désentraînement';
+    else if(r<1) zoneLabel='Récupération';
+    else if(r<params.ratioMin) zoneLabel='Maintien';
+    else if(r<params.ratioMax) zoneLabel='Adaptation ✓';
+    else zoneLabel='Sur-entraînement ⚠️';
+
+    tooltip.innerHTML=`<b>Semaine ${realIdx+1}</b><br>ATL : ${atl} · CTL : ${ctl}<br>Ratio : ${ratio} — ${zoneLabel}<br>TRIMP sem. : ${trimp}`;
+    // positionnement
+    const tx=xOf(closestI)+rect.left-rect.left;
+    const ty=(clientY-rect.top)-80;
+    tooltip.style.left=Math.min(tx,canvas.offsetWidth-180)+'px';
+    tooltip.style.top=Math.max(4,ty)+'px';
+    tooltip.style.display='block';
+  }
+
+  canvas.addEventListener('mousemove',e=>handleMove(e.clientX,e.clientY));
+  canvas.addEventListener('mouseleave',()=>{tooltip.style.display='none';});
+  canvas.addEventListener('touchmove',e=>{
+    e.preventDefault();
+    const t=e.touches[0];handleMove(t.clientX,t.clientY);
+  },{passive:false});
+  canvas.addEventListener('touchend',()=>setTimeout(()=>{tooltip.style.display='none';},1500));
+}
+
+// ═══════════════════════════════════════════════════════
+// GESTION DES SEMAINES
+// ═══════════════════════════════════════════════════════
 function addWeek(){
   if(weeks.length>=MAX_WEEKS){showToast(`Maximum ${MAX_WEEKS} semaines`);return;}
   weeks.push({0:[],1:[],2:[],3:[],4:[],5:[],6:[]});currentWeek=weeks.length-1;render();schedulePush();
 }
 function addMultiWeeks(){
-  const n=parseInt(prompt(`Combien de semaines ? (max ${MAX_WEEKS-weeks.length})`));
+  const n=parseInt(prompt(`Combien de semaines ajouter ? (max ${MAX_WEEKS-weeks.length})`));
   if(!n||isNaN(n)||n<1) return;
   const toAdd=Math.min(n,MAX_WEEKS-weeks.length);
   for(let i=0;i<toAdd;i++) weeks.push({0:[],1:[],2:[],3:[],4:[],5:[],6:[]});
-  currentWeek=weeks.length-1;render();schedulePush();showToast(`✓ ${toAdd} semaine${toAdd>1?'s':''} ajoutée${toAdd>1?'s':''}`);
+  currentWeek=weeks.length-1;render();schedulePush();
+  showToast(`✓ ${toAdd} semaine${toAdd>1?'s':''} ajoutée${toAdd>1?'s':''}`);
 }
 function removeWeek(){
   if(weeks.length<=1) return;
@@ -687,15 +900,19 @@ function copyWeek(){
   render();schedulePush();
 }
 
-window.addEventListener('resize',()=>{if(document.getElementById('page-graph').classList.contains('active'))renderChart();});
+window.addEventListener('resize',()=>{
+  if(document.getElementById('page-graph').classList.contains('active')) renderChart();
+});
 
-// ─── INIT ─────────────────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════
 setSyncBadge('syncing','⏳ Connexion...');
 loadLocal();
 loadParamsToUI();
 render();
+setupChartTooltip();
 syncNow();
-// re-sync toutes les 60s si la page est ouverte
 setInterval(()=>{if(navigator.onLine) syncNow();},60000);
 </script>
 </body>
